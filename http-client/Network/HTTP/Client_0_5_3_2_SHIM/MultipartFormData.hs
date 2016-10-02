@@ -20,7 +20,7 @@
 -- >                       ,partFileSource "file1" "/home/friedrich/Photos/MyLittlePony.jpg"
 -- >                       ,partFileRequestBody "file2" "cat.jpg" $ RequestBodyLBS $ responseBody res]
 -- >             req2)
-module Network.HTTP.Client.MultipartFormData
+module Network.HTTP.Client_0_5_3_2_SHIM.MultipartFormData
     (
     -- * Part type
      Part
@@ -50,7 +50,7 @@ module Network.HTTP.Client.MultipartFormData
     ,renderPart
     ) where
 
-import Network.HTTP.Client hiding (streamFile)
+import Network.HTTP.Client_0_5_3_2_SHIM hiding (streamFile)
 import Network.Mime
 import Network.HTTP.Types (hContentType, methodPost, Header())
 import Data.Monoid ((<>))

@@ -2,7 +2,7 @@
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE CPP #-}
-module Network.HTTP.Client.Response
+module Network.HTTP.Client_0_5_3_2_SHIM.Response
     ( getRedirectedRequest
     , getResponse
     , lbsResponse
@@ -16,12 +16,12 @@ import Data.Monoid (mempty)
 import qualified Network.HTTP.Types as W
 import Network.URI (parseURIReference, escapeURIString, isAllowedInURI)
 
-import Network.HTTP.Client.Types
+import Network.HTTP.Client_0_5_3_2_SHIM.Types
 
-import Network.HTTP.Client.Request
-import Network.HTTP.Client.Util
-import Network.HTTP.Client.Body
-import Network.HTTP.Client.Headers
+import Network.HTTP.Client_0_5_3_2_SHIM.Request
+import Network.HTTP.Client_0_5_3_2_SHIM.Util
+import Network.HTTP.Client_0_5_3_2_SHIM.Body
+import Network.HTTP.Client_0_5_3_2_SHIM.Headers
 
 -- | If a request is a redirection (status code 3xx) this function will create
 -- a new request from the old request, the server headers returned with the

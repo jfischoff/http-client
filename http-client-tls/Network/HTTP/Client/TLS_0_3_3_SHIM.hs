@@ -6,7 +6,7 @@
 -- the tls package suite.
 --
 -- Recommended reading: <https://haskell-lang.org/library/http-client>
-module Network.HTTP.Client.TLS
+module Network.HTTP.Client.TLS_0_3_3_SHIM
     ( -- * Settings
       tlsManagerSettings
     , mkManagerSettings
@@ -22,8 +22,8 @@ module Network.HTTP.Client.TLS
     ) where
 
 import Data.Default.Class
-import Network.HTTP.Client hiding (host, port)
-import Network.HTTP.Client.Internal hiding (host, port)
+import Network.HTTP.Client_0_5_3_2_SHIM hiding (host, port)
+import Network.HTTP.Client_0_5_3_2_SHIM.Internal hiding (host, port)
 import Control.Exception
 import qualified Network.Connection as NC
 import Network.Socket (HostAddress)

@@ -6,7 +6,7 @@
 {-# LANGUAGE BangPatterns #-}
 {-# OPTIONS_GHC -fno-warn-orphans #-}
 
-module Network.HTTP.Client.Request
+module Network.HTTP.Client_0_5_3_2_SHIM.Request
     ( parseUrl
     , parseUrlThrow
     , parseRequest
@@ -55,9 +55,9 @@ import qualified Control.Exception as E
 import qualified Data.CaseInsensitive as CI
 import qualified Data.ByteString.Base64 as B64
 
-import Network.HTTP.Client.Body
-import Network.HTTP.Client.Types
-import Network.HTTP.Client.Util
+import Network.HTTP.Client_0_5_3_2_SHIM.Body
+import Network.HTTP.Client_0_5_3_2_SHIM.Types
+import Network.HTTP.Client_0_5_3_2_SHIM.Util
 
 import Control.Monad.Catch (MonadThrow, throwM)
 

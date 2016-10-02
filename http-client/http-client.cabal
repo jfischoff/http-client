@@ -1,4 +1,4 @@
-name:                http-client
+name:                http-client-zero-five-three-two-shim
 version:             0.5.3.2
 synopsis:            An HTTP client engine
 description:         Hackage documentation generation is not reliable. For up to date documentation, please see: <http://www.stackage.org/package/http-client>.
@@ -18,19 +18,19 @@ flag network-uri
 
 library
   hs-source-dirs:      ., publicsuffixlist
-  exposed-modules:     Network.HTTP.Client
-                       Network.HTTP.Client.MultipartFormData
-                       Network.HTTP.Client.Internal
-  other-modules:       Network.HTTP.Client.Body
-                       Network.HTTP.Client.Connection
-                       Network.HTTP.Client.Cookies
-                       Network.HTTP.Client.Core
-                       Network.HTTP.Client.Headers
-                       Network.HTTP.Client.Manager
-                       Network.HTTP.Client.Request
-                       Network.HTTP.Client.Response
-                       Network.HTTP.Client.Types
-                       Network.HTTP.Client.Util
+  exposed-modules:     Network.HTTP.Client_0_5_3_2_SHIM
+                       Network.HTTP.Client_0_5_3_2_SHIM.MultipartFormData
+                       Network.HTTP.Client_0_5_3_2_SHIM.Internal
+  other-modules:       Network.HTTP.Client_0_5_3_2_SHIM.Body
+                       Network.HTTP.Client_0_5_3_2_SHIM.Connection
+                       Network.HTTP.Client_0_5_3_2_SHIM.Cookies
+                       Network.HTTP.Client_0_5_3_2_SHIM.Core
+                       Network.HTTP.Client_0_5_3_2_SHIM.Headers
+                       Network.HTTP.Client_0_5_3_2_SHIM.Manager
+                       Network.HTTP.Client_0_5_3_2_SHIM.Request
+                       Network.HTTP.Client_0_5_3_2_SHIM.Response
+                       Network.HTTP.Client_0_5_3_2_SHIM.Types
+                       Network.HTTP.Client_0_5_3_2_SHIM.Util
                        Network.PublicSuffixList.Lookup
                        Network.PublicSuffixList.Types
                        Network.PublicSuffixList.Serialize

@@ -1,6 +1,6 @@
 {-# LANGUAGE RecordWildCards #-}
 {-# LANGUAGE OverloadedStrings #-}
-module Network.HTTP.Client.Body
+module Network.HTTP.Client_0_5_3_2_SHIM.Body
     ( makeChunkedReader
     , makeLengthReader
     , makeGzipReader
@@ -12,8 +12,8 @@ module Network.HTTP.Client.Body
     , brRead
     ) where
 
-import Network.HTTP.Client.Connection
-import Network.HTTP.Client.Types
+import Network.HTTP.Client_0_5_3_2_SHIM.Connection
+import Network.HTTP.Client_0_5_3_2_SHIM.Types
 import Control.Exception (assert)
 import Data.ByteString (empty, uncons)
 import Data.IORef

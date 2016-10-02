@@ -75,7 +75,7 @@
 -- the case of an invalid URI. In addition, if you leverage the @IsString@
 -- instance of the 'Request' value via @OverloadedStrings@, an invalid URI will
 -- result in a partial value. Caveat emptor!
-module Network.HTTP.Client
+module Network.HTTP.Client_0_5_3_2_SHIM
     ( -- $example1
 
       -- * Performing requests
@@ -187,17 +187,17 @@ module Network.HTTP.Client
     , CookieJar
     , Proxy (..)
       -- * Cookies
-    , module Network.HTTP.Client.Cookies
+    , module Network.HTTP.Client_0_5_3_2_SHIM.Cookies
     ) where
 
-import Network.HTTP.Client.Body
-import Network.HTTP.Client.Connection (makeConnection, socketConnection)
-import Network.HTTP.Client.Cookies
-import Network.HTTP.Client.Core
-import Network.HTTP.Client.Manager
-import Network.HTTP.Client.Request
-import Network.HTTP.Client.Response
-import Network.HTTP.Client.Types
+import Network.HTTP.Client_0_5_3_2_SHIM.Body
+import Network.HTTP.Client_0_5_3_2_SHIM.Connection (makeConnection, socketConnection)
+import Network.HTTP.Client_0_5_3_2_SHIM.Cookies
+import Network.HTTP.Client_0_5_3_2_SHIM.Core
+import Network.HTTP.Client_0_5_3_2_SHIM.Manager
+import Network.HTTP.Client_0_5_3_2_SHIM.Request
+import Network.HTTP.Client_0_5_3_2_SHIM.Response
+import Network.HTTP.Client_0_5_3_2_SHIM.Types
 
 import Data.IORef (newIORef, writeIORef, readIORef, modifyIORef)
 import qualified Data.ByteString.Lazy as L

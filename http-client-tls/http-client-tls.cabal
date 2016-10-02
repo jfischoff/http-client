@@ -1,4 +1,4 @@
-name:                http-client-tls
+name:                http-client-tls-zero-three-three-shim
 version:             0.3.3
 synopsis:            http-client backend using the connection package and tls library
 description:         Hackage documentation generation is not reliable. For up to date documentation, please see: <https://www.stackage.org/package/http-client-tls>.
@@ -14,11 +14,11 @@ extra-source-files:  README.md
                      ChangeLog.md
 
 library
-  exposed-modules:     Network.HTTP.Client.TLS
+  exposed-modules:     Network.HTTP.Client.TLS_0_3_3_SHIM
   other-extensions:    ScopedTypeVariables
   build-depends:       base >= 4 && < 5
                      , data-default-class
-                     , http-client >= 0.5.0
+                     , http-client-zero-five-three-two-shim
                      , connection >= 0.2.2
                      , network
                      , tls >= 1.2

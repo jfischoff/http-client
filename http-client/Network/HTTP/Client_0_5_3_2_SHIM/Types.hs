@@ -3,7 +3,7 @@
 {-# LANGUAGE DeriveFunctor #-}
 {-# LANGUAGE DeriveTraversable #-}
 {-# LANGUAGE RankNTypes #-}
-module Network.HTTP.Client.Types
+module Network.HTTP.Client_0_5_3_2_SHIM.Types
     ( BodyReader
     , Connection (..)
     , StatusHeaders (..)

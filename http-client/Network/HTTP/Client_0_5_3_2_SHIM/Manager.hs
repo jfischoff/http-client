@@ -4,7 +4,7 @@
 {-# LANGUAGE CPP #-}
 {-# LANGUAGE BangPatterns #-}
 {-# LANGUAGE RankNTypes #-}
-module Network.HTTP.Client.Manager
+module Network.HTTP.Client_0_5_3_2_SHIM.Manager
     ( ManagerSettings (..)
     , newManager
     , closeManager
@@ -49,10 +49,10 @@ import qualified Network.Socket as NS
 
 import System.Mem.Weak (Weak, deRefWeak)
 import Network.HTTP.Types (status200)
-import Network.HTTP.Client.Types
-import Network.HTTP.Client.Connection
-import Network.HTTP.Client.Headers (parseStatusHeaders)
-import Network.HTTP.Client.Request (applyBasicProxyAuth, extractBasicAuthInfo)
+import Network.HTTP.Client_0_5_3_2_SHIM.Types
+import Network.HTTP.Client_0_5_3_2_SHIM.Connection
+import Network.HTTP.Client_0_5_3_2_SHIM.Headers (parseStatusHeaders)
+import Network.HTTP.Client_0_5_3_2_SHIM.Request (applyBasicProxyAuth, extractBasicAuthInfo)
 import Control.Concurrent.MVar (MVar, takeMVar, tryPutMVar, newEmptyMVar)
 import System.Environment (getEnvironment)
 import qualified Network.URI as U

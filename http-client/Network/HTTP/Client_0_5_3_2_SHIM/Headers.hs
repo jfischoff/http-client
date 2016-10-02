@@ -1,7 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE RecordWildCards   #-}
 {-# LANGUAGE ViewPatterns      #-}
-module Network.HTTP.Client.Headers
+module Network.HTTP.Client_0_5_3_2_SHIM.Headers
     ( parseStatusHeaders
     ) where
 
@@ -10,9 +10,9 @@ import           Control.Monad
 import qualified Data.ByteString                as S
 import qualified Data.ByteString.Char8          as S8
 import qualified Data.CaseInsensitive           as CI
-import           Network.HTTP.Client.Connection
-import           Network.HTTP.Client.Types
-import           Network.HTTP.Client.Util       (timeout)
+import           Network.HTTP.Client_0_5_3_2_SHIM.Connection
+import           Network.HTTP.Client_0_5_3_2_SHIM.Types
+import           Network.HTTP.Client_0_5_3_2_SHIM.Util       (timeout)
 import           Network.HTTP.Types
 import Data.Word (Word8)
 

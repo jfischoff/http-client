@@ -4,7 +4,7 @@
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE ScopedTypeVariables #-}
 {-# LANGUAGE TupleSections #-}
-module Network.HTTP.Client.Util
+module Network.HTTP.Client_0_5_3_2_SHIM.Util
     ( hGetSome
     , (<>)
     , readDec

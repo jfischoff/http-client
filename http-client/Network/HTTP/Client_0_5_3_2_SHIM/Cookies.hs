@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 -- | This module implements the algorithms described in RFC 6265 for the Network.HTTP.Conduit library.
-module Network.HTTP.Client.Cookies
+module Network.HTTP.Client_0_5_3_2_SHIM.Cookies
     ( updateCookieJar
     , receiveSetCookie
     , generateCookie
@@ -30,7 +30,7 @@ import qualified Network.PublicSuffixList.Lookup as PSL
 import Data.Text.Encoding (decodeUtf8With)
 import Data.Text.Encoding.Error (lenientDecode)
 
-import Network.HTTP.Client.Types as Req
+import Network.HTTP.Client_0_5_3_2_SHIM.Types as Req
 
 slash :: Integral a => a
 slash = 47 -- '/'

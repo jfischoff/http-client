@@ -1,7 +1,7 @@
 {-# LANGUAGE ScopedTypeVariables #-}
 {-# LANGUAGE CPP #-}
 {-# LANGUAGE OverloadedStrings #-}
-module Network.HTTP.Client.Core
+module Network.HTTP.Client_0_5_3_2_SHIM.Core
     ( withResponse
     , httpLbs
     , httpNoBody
@@ -18,12 +18,12 @@ module Network.HTTP.Client.Core
 import Prelude hiding (catch)
 #endif
 import Network.HTTP.Types
-import Network.HTTP.Client.Manager
-import Network.HTTP.Client.Types
-import Network.HTTP.Client.Body
-import Network.HTTP.Client.Request
-import Network.HTTP.Client.Response
-import Network.HTTP.Client.Cookies
+import Network.HTTP.Client_0_5_3_2_SHIM.Manager
+import Network.HTTP.Client_0_5_3_2_SHIM.Types
+import Network.HTTP.Client_0_5_3_2_SHIM.Body
+import Network.HTTP.Client_0_5_3_2_SHIM.Request
+import Network.HTTP.Client_0_5_3_2_SHIM.Response
+import Network.HTTP.Client_0_5_3_2_SHIM.Cookies
 import Data.Maybe (fromMaybe, isJust)
 import Data.Time
 import Control.Exception

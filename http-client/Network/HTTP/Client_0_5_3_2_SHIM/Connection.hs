@@ -1,7 +1,7 @@
 {-# LANGUAGE ScopedTypeVariables #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE ViewPatterns #-}
-module Network.HTTP.Client.Connection
+module Network.HTTP.Client_0_5_3_2_SHIM.Connection
     ( connectionReadLine
     , connectionReadLineWith
     , connectionDropTillBlankLine
@@ -15,7 +15,7 @@ module Network.HTTP.Client.Connection
 import Data.ByteString (ByteString, empty)
 import Data.IORef
 import Control.Monad
-import Network.HTTP.Client.Types
+import Network.HTTP.Client_0_5_3_2_SHIM.Types
 import Network.Socket (Socket, sClose, HostAddress)
 import qualified Network.Socket as NS
 import Network.Socket.ByteString (sendAll, recv)
